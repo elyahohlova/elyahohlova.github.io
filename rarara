@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <style>
+    BODY {
+      align-items: center;
+      justify-content: center;
+      background: white;
+      font-family: Georgia;
+    }
+    
+    H1 {
+      font-size: 30px;
+      font-weight: normal;
+      cursor: pointer;
+      text-shadow: 0 0 15px #999;
+      color: transparent;
+      transition: all .5s;
+    }
+    
+    H1:hover {
+      text-shadow: 0 0 0px #333;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function func1() {
+      var a;
+      a = Number(document.getElementById("a_znach").value);
+      document.getElementById("kont_a").innerHTML = "<h1>" + "Периметр" + "<br>" + a * 4 + "</h1>";
+    }
+
+    function func2() {
+      var r;
+      r = Number(document.getElementById("b_znach").value);
+      document.getElementById("b").innerHTML = "<h1>" + "Диаметр" + "<br>" + r * 2 + "</h1>";
+    }
+
+
+    function func3() {
+      var y;
+      y = Number(document.getElementById("g_znach").value);
+      var d;
+      d = document.getElementById("try").innerHTML;
+      q = y % 10
+      w = (y - q) / 10
+      document.getElementById("try").innerHTML = "<h1>" + "Число десятков" + "<br>" + w + "</h1>";
+      var e;
+      e = document.getElementById("tro").innerHTML;
+
+      document.getElementById("tro").innerHTML = "<h1>" + "Число единиц" + "<br>" + q + "</h1>";
+      var s;
+      s = document.getElementById("tru").innerHTML;
+      document.getElementById("tru").innerHTML = "<h1>" + "произведение чисел" + "<br>" + q * w + "</h1>";
+       l = document.getElementById("kok").innerHTML;
+      document.getElementById("kok").innerHTML = "<h1>" + "сумма чисел" + "<br>" + (Number(q)+Number(w))+ "</h1>";
+    }
+
+    function func4() {
+      var j;
+      j = Number(document.getElementById("hochy_est").value);
+      document.getElementById("lil").innerHTML = "<h1>" + "Единицы" + "<br>" + j % 10 + "</h1>";
+      e = j % 100;
+      f = e % 10
+      h = (e - f) / 10
+      document.getElementById("lol").innerHTML = "<h1>" + "Десятки" + "<br>" + h + "</h1>";
+      y = j % 100;
+
+      r = (j - y) / 100
+      document.getElementById("lal").innerHTML = "<h1>" + "Сотни" + "<br>" + r + "</h1>";
+    }
+    
+    function func5() {
+      var x;
+      x = Number(document.getElementById("kak_dela").value);
+      var f;
+      f = document.getElementById("kak").innerHTML;
+      p = x % 10
+      z = (x - p) / 10
+      document.getElementById("kak").innerHTML = "<h1>" + "Число десятков" + "<br>" + z + "</h1>";
+      var o;
+      o = document.getElementById("kik").innerHTML;
+
+      document.getElementById("kik").innerHTML = "<h1>" + "Число единиц" + "<br>" + p + "</h1>";
+      var l;
+      l = document.getElementById("kok").innerHTML;
+      document.getElementById("kok").innerHTML = "<h1>" + "сумма чисел" + "<br>" + (Number(p)+Number(z))+ "</h1>";
+       s = document.getElementById("tru").innerHTML;
+      document.getElementById("tru").innerHTML = "<h1>" + "произведение чисел" + "<br>" + p * z + "</h1>";
+    }
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Задача 1.25</h1> Сторона квадрата a=
+  <input type="text" value="0" id="a_znach">
+  <button onclick="func1()">1.25</button>
+  <div id="kont_a"></div>
+
+
+  <h1>Задача 1.26</h1> Радиус r=
+  <input type="text" value="0" id="b_znach">
+  <button onclick="func2()">1.26</button>
+  <div id="b"></div>
+
+  <h1>Задача </h1> Радиус r=
+  <input type="text" value="0" id="b_znach">
+  <button onclick="func2()">1.26</button>
+  <div id="b"></div>
+
+
+  <h1>Задача 2.10 </h1> число y =
+  <input type="text" value="0" id="g_znach">
+  <button onclick="func3()">2.10</button>
+  <div id="try"></div>
+  <div id="tro"></div>
+  <div id="tru"></div>
+
+  <h1>Задача 2.11 </h1> число x =
+  <input type="text" value="0" id="kak_dela">
+  <button onclick="func5()">2.11</button>
+  <div id="kak"></div>
+  <div id="kik"></div>
+  <div id="kok"></div>
+ 
+  
+  <h1>Задача 2.12</h1> Введите трехзначное число j=
+  <input type="text" value="0" id="hochy_est">
+  <button onclick="func4()">2.12</button>
+
+  <div id="lil"></div>
+  <div id="lol"></div>
+  <div id="lal"></div>
