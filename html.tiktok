@@ -1,0 +1,76 @@
+<html>
+
+<head>
+ 
+  <body> 
+     <script>
+       fuction a () {
+          document.getElementById("inf1").innerHTML = ""
+          var a = Numer(document.getElementId("IN1").value);
+
+          var z = 0
+          while (a > 1) {
+            If (a % 10 ==3)
+            z++         
+          } 
+
+          a= (a - a % 10)
+
+       }
+
+       document.getElementById("inf1").innerHTML = document.getElementById("inf1").innerHTML + z
+       }
+
+       fuction b ()
+       var q=0
+        if (a % 10 == z)
+        q++
+
+
+
+</script>
+<input type = "text" value "1234" id = "IN1">
+<br>
+<buttton onclick="a()">a</button>
+<html>
+<head>
+<script>
+
+
+function c(){
+ document.getElementById("inf1").innerHTML = "";
+    var  a = Number(document.getElementById("IN1").value);
+  var z =0
+  while (a>1){  
+  if ( (a%10)%2==0){
+  z++
+  }
+  a=(a-a%10)/10
+  
+  
+  
+  
+  
+}
+   document.getElementById("inf1").innerHTML = document.getElementById("inf1").innerHTML + z ;
+}
+
+
+</script>
+</head>
+<body>
+
+  <br>
+  <div id="inf1"></div>
+  <br>
+  <br>
+  <button onclick="c()">c</button>
+  <br>
+  <br>
+<input type="text" value="box1" id="IN1">
+</body>
+</html>
+
+
+
+
